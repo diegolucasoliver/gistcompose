@@ -76,6 +76,8 @@ dependencies {
     implementation "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle"
     implementation 'androidx.activity:activity-compose:1.4.0'
 
+    implementation "io.insert-koin:koin-android:$koin"
+    implementation "io.insert-koin:koin-androidx-compose:$koin"
 
     testImplementation "junit:junit:$junit"
     androidTestImplementation "androidx.test.ext:junit:$androidx_junit"
