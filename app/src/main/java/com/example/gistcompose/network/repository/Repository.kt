@@ -4,7 +4,7 @@ import com.example.gistcompose.network.GitHubServices
 import com.example.gistcompose.network.model.GistResponse
 
 interface Repository {
-    suspend fun fetchGistList(page: Int = 1, perPage: Int = 50): List<GistResponse>
+    suspend fun fetchGistList(page: Int, perPage: Int): List<GistResponse>
 }
 
 class RepositoryImpl(val services: GitHubServices): Repository {

@@ -1,6 +1,7 @@
 package com.example.gistcompose
 
 import android.app.Application
+import com.example.gistcompose.domain.di.domainModule
 import com.example.gistcompose.network.di.networkModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger
@@ -15,7 +16,8 @@ class CustomApplication: Application() {
             androidLogger()
             androidContext(this@CustomApplication)
             modules(
-                networkModule
+                networkModule,
+                domainModule
             )
         }
     }

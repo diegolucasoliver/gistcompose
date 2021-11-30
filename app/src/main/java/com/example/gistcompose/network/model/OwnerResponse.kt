@@ -3,9 +3,9 @@ package com.example.gistcompose.network.model
 import com.google.gson.annotations.SerializedName
 
 data class OwnerResponse(
-    val login: String,
+    val login: String?,
     @SerializedName("avatar_url")
-    val avatarUrl: String,
+    val avatarUrl: String?,
     @SerializedName("html_url")
-    val htmlUrl: String
+    val htmlUrl: String?
 )
